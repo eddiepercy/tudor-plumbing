@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" />
+    <title>
+      SiteJourney — AI Website Builder: Make a Website in 60 Seconds
+    </title>
+    <meta name="description" content="Describe your business and SiteJourney&#39;s AI builds a professional website in under 60 seconds. Free to start, hosting included, no coding required." />
+    <meta name="author" content="SiteJourney" />
+    <meta name="theme-color" content="#000000" />
+    <script>
+      // Instagram bio links rewrite &#34;#&#34; as &#34;%23&#34;. Normalize back to a real
+      // hash fragment before React mounts so attribution capture keeps working.
+      (function () {
+        try {
+          var path = location.pathname;
+          var idx = path.search(/%23/i);
+          if (idx === -1) return;
+          var before = path.slice(0, idx);
+          var frag = decodeURIComponent(path.slice(idx));
+          var newPath = before === &#34;&#34; ? &#34;/&#34; : before;
+          history.replaceState(null, &#34;&#34;, newPath + location.search + frag);
+        } catch (_) { /* no-op */ }
+      })();
+    </script>
+    <!-- No static canonical or og:url here: react-helmet-async owns the
+         per-route canonical/OG URL. A hardcoded one would leave every page
+         with two canonicals, one pointing at the homepage. -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="SiteJourney" />
+    <meta property="og:title" content="SiteJourney — AI Website Builder: Make a Website in 60 Seconds" />
+    <meta property="og:description" content="Describe your business and SiteJourney&#39;s AI builds a professional website in under 60 seconds. Free to start, hosting included, no coding required." />
+    <meta property="og:image" content="https://sitejourney.ai/og-image.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="SiteJourney — AI Website Builder: Make a Website in 60 Seconds" />
+    <meta name="twitter:description" content="Describe your business and SiteJourney&#39;s AI builds a professional website in under 60 seconds. Free to start, hosting included, no coding required." />
+    <meta name="twitter:image" content="https://sitejourney.ai/og-image.png" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Bricolage+Grotesque:opsz,wght@12..96,400..800&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Instrument+Serif:ital@0;1&amp;family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet" />
+    <script type="module" crossorigin="" src="/assets/index-Bw9Ds39L.js">
+    </script>
+    <link rel="stylesheet" crossorigin="" href="/assets/index-CgEh2C-O.css" />
+  </head>
+  <body>
+    <div id="root">
+    </div>
+  </body>
+</html>
